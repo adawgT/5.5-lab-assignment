@@ -1,50 +1,74 @@
+:root {
+    --primary-color: #333;
+    --secondary-color: #f8f9fa;
+    --accent-color: #ff3b30;
+    --text-color: #222;
+    --font-family: 'Arial', sans-serif;
+}
+
 body {
-    font-family: Helvetica, sans-serif;
-    color: #EAE8FF;
-    background: #2D3142;
-    padding: 0 40px;
+    font-family: var(--font-family);
+    background: var(--secondary-color);
+    color: var(--text-color);
     text-align: center;
 }
 
-nav {
-    margin: 40px auto 0 auto;
-    width: 250px;
-    border-radius: 50px;
-    background: #212431;
+.hero {
+    padding: 50px 20px;
 }
 
-nav ul {
-    display: flex;
-    justify-content: space-evenly;
-    margin: 0;
+.hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.hero img {
+    max-width: 80%;
+    height: auto;
+}
+
+.features {
+    padding: 20px;
+}
+
+.features h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.features ul {
+    list-style: none;
     padding: 0;
 }
 
-nav ul li {
-    list-style-type: none;
-    margin: 0;
+.features li {
+    font-size: 1.2rem;
+    padding: 10px 0;
 }
 
-nav ul li a {
-    display: inline-block;
-    padding: 20px;
-    color: #EAE8FF;
-    text-decoration: none;
-    font-size: 1.2em;
+.subscribe {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 400px;
+    margin: 0 auto;
 }
 
-h1 {
-    font-size: 8em;
-    letter-spacing: -2px;
+.subscribe form {
+    display: flex;
+    flex-direction: column;
 }
 
-h1 strong {
-    background: rgb(34,193,195);
-    background: linear-gradient(45deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+.subscribe input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
 }
 
-img.about {
-    opacity: 0.5;
+.subscribe button {
+    background: var(--accent-color);
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
 }
